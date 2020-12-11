@@ -1,0 +1,18 @@
+{
+    "name": "default",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "docker",
+    "database": "happy_database",
+    "migrations" : [
+        "/home/william/Documentos/Projects/Happy/server/src/database/migrations/*.ts"
+    ],
+    "entities": [
+        "./src/app/models/*.ts"
+    ],
+    "cli" : {
+        "migrationsDir": "/home/william/Documentos/Projects/Happy/server/src/database/migrations"
+    }
+}
